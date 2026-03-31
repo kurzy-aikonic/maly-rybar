@@ -5,7 +5,8 @@ Projekt obsahuje:
 - `landing/` - landing page pro cekaci listinu
 - `api/` - Vercel serverless endpointy (napr. `/api/waitlist`)
 - `data/` - obsahove JSON zdroje (ryby, testy, uzly, reviry)
-- `app/` - sdilena logika pro mobilni appku
+- `app/` - sdilena logika pro mobilni appku (TypeScript)
+- `mobile/` - Expo (React Native) aplikace - Faze 2+
 - `supabase/migrations/` - SQL migrace
 
 ## Rychly start
@@ -27,6 +28,16 @@ vercel dev
 ```
 
 Pak otevrej `http://localhost:3000/landing/`.
+
+## Mobilni aplikace (Expo)
+
+```bash
+cd mobile
+npm install
+npx expo start
+```
+
+Metro nacita JSON z korenoveho `data/` (sdileny obsah s webem).
 
 ## Bezpecnost
 
