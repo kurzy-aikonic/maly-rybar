@@ -39,6 +39,24 @@ npx expo start
 
 Metro nacita JSON z korenoveho `data/` (sdileny obsah s webem).
 
+### Expo hlasi `TypeError: fetch failed` pri `expo start`
+
+Expo CLI pri startu vola internet (validace verzi). Pokud mas VPN, firemni sif, DNS
+blok nebo docasne vypadky, spust:
+
+```bash
+cd mobile
+npm run start
+```
+
+Skript je nastaveny na `expo start --offline`. Online rezim:
+
+```bash
+npm run start:online
+```
+
+Pfipadne docasne vypni VPN / zmen DNS (napr. 1.1.1.1) a zkus znovu.
+
 ## Bezpecnost
 
 - `SUPABASE_SERVICE_ROLE_KEY` je pouze server-side tajemstvi.
