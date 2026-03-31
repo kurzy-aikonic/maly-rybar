@@ -2,6 +2,7 @@ import React from "react";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
 import { useApp } from "../context/AppContext";
+import { examHorizonLabel } from "../lib/examLabels";
 import { progressService } from "../lib/progress";
 
 const colors = {
@@ -12,7 +13,7 @@ const colors = {
 };
 
 export function HomeScreen() {
-  const { progress, hydrated } = useApp();
+  const { progress, hydrated, childAge, examHorizon } = useApp();
   const nextXp = progressService.xpForNextLevel(progress.level);
 
   if (!hydrated) {
@@ -27,6 +28,14 @@ export function HomeScreen() {
     <View style={styles.wrap}>
       <Text style={styles.h1}>Dnesni mise</Text>
       <Text style={styles.lead}>Zvladni kratky kviz a posun svuj pokrok.</Text>
+
+      {typeof childAge === "number" && examHorizon ? (
+        <View style={styles.profileBanner}>
+          <Text style={styles.profileText}>
+            Vek {childAge} · {examHorizonLabel(examHorizon)}
+          </Text>
+        </View>
+      ) : null}
 
       <View style={styles.card}>
         <Text style={styles.label}>Uroven</Text>
@@ -69,6 +78,19 @@ const styles = StyleSheet.create({
     color: colors.muted,
     fontSize: 15,
     marginBottom: 16
+  },
+  profileBanner: {
+    backgroundColor: "#0f1c1a",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#1f6b5c",
+    padding: 12,
+    marginBottom: 14
+  },
+  profileText: {
+    color: colors.accent,
+    fontWeight: "700",
+    fontSize: 14
   },
   card: {
     backgroundColor: "#161b22",

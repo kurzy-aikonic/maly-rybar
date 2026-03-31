@@ -1,5 +1,5 @@
 import React from "react";
-import { Pressable, StyleSheet, Switch, Text, View } from "react-native";
+import { Alert, Pressable, StyleSheet, Switch, Text, View } from "react-native";
 
 import { useApp } from "../context/AppContext";
 
@@ -11,7 +11,18 @@ const colors = {
 };
 
 export function ProfileScreen() {
-  const { isPremium, setIsPremium } = useApp();
+  const { isPremium, setIsPremium, resetOnboarding } = useApp();
+
+  function confirmResetIntro() {
+    Alert.alert(
+      "Znovu uvod",
+      "Chces znovu vyplnit vek a cil? Tim se zobrazi prvni obrazovka aplikace.",
+      [
+        { text: "Zrusit", style: "cancel" },
+        { text: "Ano", style: "destructive", onPress: () => resetOnboarding() }
+      ]
+    );
+  }
 
   return (
     <View style={styles.wrap}>
@@ -25,8 +36,12 @@ export function ProfileScreen() {
         <Switch value={isPremium} onValueChange={setIsPremium} />
       </View>
 
-      <Pressable style={styles.secondary}>
-        <Text style={styles.secondaryText}>Brzy: prihlaseni a platby</Text>
+      <Pressable style={styles.secondary} onPress={confirmResetIntro}>
+        <Text style={styles.secondaryText}>Znovu spustit uvodni nastaveni</Text>
+      </Pressable>
+
+      <Pressable style={[styles.secondary, { marginTop: 10 }]} disabled>
+        <Text style={[styles.secondaryText, { opacity: 0.5 }]}>Brzy: prihlaseni a platby</Text>
       </Pressable>
     </View>
   );

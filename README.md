@@ -35,10 +35,22 @@ Pak otevrej `http://localhost:3000/landing/`.
 ```bash
 cd mobile
 npm install
-npx expo start
+npm run start
 ```
 
 Metro nacita JSON z korenoveho `data/` (sdileny obsah s webem).
+
+### Bez App Store / bez Xcode (nahled v prohlizeci)
+
+Kdyz ti nejde App Store nebo nechces instalovat Xcode, spust Metro a v terminalu zmackni **`w`** (web),
+nebo:
+
+```bash
+cd mobile
+npx expo start --offline --web
+```
+
+Kompletni mobilni chovani je nejblizsi na **Androidu / iPhonu**; web staci na rychly nahled UI.
 
 ### Expo hlasi `TypeError: fetch failed` pri `expo start`
 
