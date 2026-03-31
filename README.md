@@ -49,13 +49,13 @@ cd mobile
 npm run start
 ```
 
-Skript je nastaveny na `expo start --offline`. Online rezim:
+Skript je nastaveny na `expo start --offline`.
 
-```bash
-npm run start:online
-```
+Volitelny **online** rezim (`npm run start:online`) funguje jen pokud Mac **umi HTTPS** na servery Expo.
+Kdyz i u tebe pada `TypeError: fetch failed` uz pri startu CLI, **je to normalni na sitich s VPN/firewallem** —
+proste pouzivej **`npm run start`** (offline) a Metro pobezi stejne dobre.
 
-Pfipadne docasne vypni VPN / zmen DNS (napr. 1.1.1.1) a zkus znovu.
+Online zkus az pri docasnem vypnuti VPN / jine Wi-Fi / jinem DNS (napr. 1.1.1.1).
 
 ### Expo Go pise „Something went wrong“
 
@@ -67,31 +67,28 @@ Pfipadne docasne vypni VPN / zmen DNS (napr. 1.1.1.1) a zkus znovu.
 
 ### Android: `IOException: failed to download remote update`
 
-Expo Go nekdy pri **offline** startu (`expo start --offline`) nebo pri blokovane siti skonci timto
-chybovym oknem (Java hlasi stazeni „remote“ manifestu).
+Typicky kombinace **blokovane sitove cesty** + toho, ze Expo Go se pokousi stahnout cast manifestu
+**z internetu**, zatimco ty spoustis Metro **offline** a/nebo mas problemy s LAN na Wi-Fi.
 
-**Postup:**
+**Dulezite:** Kdyz na Macu **nefunguje** `npm run start:online` (`fetch failed`), **nepomuze** ani tunnel —
+tunnel taky potrebuje, aby Mac dosahoval na Expo.
 
-1. Vypni na telefonu **VPN** a zkontroluj, ze jsi na **stejne Wi-Fi** jako Mac.
-2. Zkus spustit **online** rezim (potrebuje spojeni Macu k Expo API):
+**Co delat (od nejjistejsiho):**
 
-   ```bash
-   cd mobile
-   npm run start:online
-   ```
-
-3. Kdyz LAN nefunguje (firemni sit), zkus **tunnel**:
+1. Na Macu spust **`npm run start`** (offline), nech bezet Metro a zapis si **port** (8081 nebo 8082).
+2. **Zavres duplicitni Metro** (starsi okno), aby byl jen jeden port — nebo `kill` PID, co Expo vypise.
+3. **USB kabel** — na Macu (s Android platform tools) spust:
 
    ```bash
-   cd mobile
-   npm run start:tunnel
+   adb reverse tcp:8082 tcp:8082
    ```
 
-4. V Expo Go pouzij **Enter URL manually** a vloz presne adresu z terminálu, napr.
-   `exp://192.168.0.78:8082` (IP a port podle toho, co Expo vypise).
-5. Aktualizuj **Expo Go** z Obchodu Play.
-6. Jako posledni moznost: v nastaveni Androidu **vymaz dat / cache** u aplikace Expo Go
-   (resetuje zasekly stav stahovani).
+   (cislo **8082** nahrad tim, co pise Metro — pokud je 8081, pouzij 8081.)
+
+4. V Expo Go: **Enter URL manually** → `exp://127.0.0.1:8082` (opet spravny port).
+   Tim jde provoz **pres USB**, obchazi cast problemu Wi-Fi a „remote update“.
+5. Bez USB: stejna Wi-Fi, VPN **vypnuta** na telefonu i Macu, rucne `exp://192.168.x.x:PORT` z terminálu.
+6. Aktualizuj **Expo Go** z Obchodu Play; pripadne **vymaz dat** u Expo Go.
 
 ## Bezpecnost
 
