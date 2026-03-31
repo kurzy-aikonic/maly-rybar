@@ -47,8 +47,11 @@ nebo:
 
 ```bash
 cd mobile
-npx expo start --offline --web
+npm run web
 ```
+
+Balicky `react-dom` a `react-native-web` uz jsou v projektu. Kdyby `npx expo install ...` u tebe
+padalo na siti, pouzij jen `npm install` v `mobile/`.
 
 Kompletni mobilni chovani je nejblizsi na **Androidu / iPhonu**; web staci na rychly nahled UI.
 
