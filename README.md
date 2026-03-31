@@ -65,6 +65,34 @@ Pfipadne docasne vypni VPN / zmen DNS (napr. 1.1.1.1) a zkus znovu.
 3. Podivej se do **terminálu Metro**: pri otevreni projektu casto uvidis cerveny text s presnou chybou.
 4. Zkus **Reload** v Expo Go (vytoct menu / potraseni telefonem) nebo `r` v Metro.
 
+### Android: `IOException: failed to download remote update`
+
+Expo Go nekdy pri **offline** startu (`expo start --offline`) nebo pri blokovane siti skonci timto
+chybovym oknem (Java hlasi stazeni „remote“ manifestu).
+
+**Postup:**
+
+1. Vypni na telefonu **VPN** a zkontroluj, ze jsi na **stejne Wi-Fi** jako Mac.
+2. Zkus spustit **online** rezim (potrebuje spojeni Macu k Expo API):
+
+   ```bash
+   cd mobile
+   npm run start:online
+   ```
+
+3. Kdyz LAN nefunguje (firemni sit), zkus **tunnel**:
+
+   ```bash
+   cd mobile
+   npm run start:tunnel
+   ```
+
+4. V Expo Go pouzij **Enter URL manually** a vloz presne adresu z terminálu, napr.
+   `exp://192.168.0.78:8082` (IP a port podle toho, co Expo vypise).
+5. Aktualizuj **Expo Go** z Obchodu Play.
+6. Jako posledni moznost: v nastaveni Androidu **vymaz dat / cache** u aplikace Expo Go
+   (resetuje zasekly stav stahovani).
+
 ## Bezpecnost
 
 - `SUPABASE_SERVICE_ROLE_KEY` je pouze server-side tajemstvi.
