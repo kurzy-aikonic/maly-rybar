@@ -15,7 +15,8 @@ Projekt obsahuje:
 2. Vypln:
    - `SUPABASE_URL`
    - `SUPABASE_SERVICE_ROLE_KEY`
-3. Nasad landing na Vercel (root projektu).
+3. Nasad **cely repozitar** na Vercel (root projektu). Korenova URL `/` presmeruje na `/landing/`.
+   Otevri tedy `https://tvuj-projekt.vercel.app/landing/` nebo jen `https://tvuj-projekt.vercel.app/` (redirect).
 4. Aplikuj SQL migraci v Supabase SQL editoru.
 
 ## Lokalne
