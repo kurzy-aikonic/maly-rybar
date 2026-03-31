@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maly rybar - Uceni i zabava u vody</title>
+    <meta
+      name="description"
+      content="Maly rybar uci deti 8-15 let na rybarske zkousky pomoci atlasu ryb, testu a hernich misi."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="badge">Nova aplikace pro deti 8-15 let</p>
+        <h1>Dite zvladne rybarske zkousky s klidem a zabavou</h1>
+        <p class="lead">
+          Atlas ryb, testy, uzly, denik ulovku a denni mise v jedne aplikaci.
+          Prihlas se na cekaci listinu a ziskej early access + startovni slevu na Premium.
+        </p>
+        <a href="#waitlist" class="btn">Chci pristup do bety</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2>Proc to funguje</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Uceni po malych krocich</h3>
+              <p>Kratke lekce a testy, ktere dite zvladne i za 5 minut denne.</p>
+            </article>
+            <article class="card">
+              <h3>Jasny pokrok</h3>
+              <p>XP body, levely a streak ukazuji, ze priprava jde spravnym smerem.</p>
+            </article>
+            <article class="card">
+              <h3>Praxe u vody</h3>
+              <p>Atlas ryb, uzly a denik ulovku dela z aplikace partaka i po zkouskach.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2>Free vs Premium</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Free</h3>
+              <p>Start zdarma: zaklad atlasu, testy a prvni uzly.</p>
+            </article>
+            <article class="card">
+              <h3>Premium</h3>
+              <p>Simulace zkousky, vysvetleni chyb, pokrocile uzly, bez reklam.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Pro rodice: proc aplikaci zkusit</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Jasny plan pripravy</h3>
+              <p>Dite ma kazdy den konkretni ukol a vidi pokrok.</p>
+            </article>
+            <article class="card">
+              <h3>Vyuka i praxe</h3>
+              <p>Nejen testy, ale i realne navyky u vody a setrne chovani k prirode.</p>
+            </article>
+            <article class="card">
+              <h3>Bezpecny obsah</h3>
+              <p>Obsah je zamereny na vyuku, bez socialni site a cizich chatu.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Pro jaky vek je appka?</h3>
+              <p>Primarne pro deti 8-15 let.</p>
+            </article>
+            <article class="card">
+              <h3>Staci Free verze?</h3>
+              <p>Ano, na start ano. Premium je pro rychlejsi a hlubsi pripravu.</p>
+            </article>
+            <article class="card">
+              <h3>Kdy bude spusteni?</h3>
+              <p>Drive dostanou pristup uzivatele z cekaci listiny.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="waitlist" class="section">
+        <div class="container">
+          <h2>Zapis se na cekaci listinu</h2>
+          <p class="lead">Ziskej prednostni pristup a vyhodnejsi cenu pri spusteni.</p>
+          <form id="waitlistForm" class="waitlist-form">
+            <label>
+              E-mail
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Jsi
+              <select name="role" required>
+                <option value="">Vyber</option>
+                <option value="parent">Rodic</option>
+                <option value="child">Dite</option>
+              </select>
+            </label>
+            <label>
+              Vek ditete
+              <input type="number" name="childAge" min="8" max="15" />
+            </label>
+            <button class="btn" type="submit">Chci early access</button>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Maly rybar</p>
+        <p>
+          <a href="./privacy-policy.md">Ochrana soukromi</a> |
+          <a href="./terms.md">Podminky</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

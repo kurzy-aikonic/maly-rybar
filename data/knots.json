@@ -1,0 +1,178 @@
+[
+  {
+    "id": "knot_hacek_zaklad",
+    "name": "Zakladni uzel na hacek",
+    "type": "hacek",
+    "steps": [
+      "Provlec vlasec ockem hacku.",
+      "Udelej 5-7 ovinuti kolem kmene.",
+      "Protahni konec vzniklym ockem.",
+      "Navlhci a dotahni."
+    ],
+    "common_mistakes": [
+      "Malo ovinuti",
+      "Dotazeni na sucho bez navlhceni"
+    ],
+    "is_premium": false
+  },
+  {
+    "id": "knot_obratlik_klinc",
+    "name": "Klinc na obratlik",
+    "type": "obratlik",
+    "steps": [
+      "Protahni vlasec ockem obratliku.",
+      "Omotej volny konec 5x kolem hlavniho vlasce.",
+      "Vrat konec do prvniho ocka u obratliku.",
+      "Navlhci a dotahni."
+    ],
+    "common_mistakes": [
+      "Spatny smer omotani",
+      "Pretazeni uzlu bez navlhceni"
+    ],
+    "is_premium": false
+  },
+  {
+    "id": "knot_spojovaci_krvavy",
+    "name": "Krvavy spojovaci uzel",
+    "type": "spojovaci",
+    "steps": [
+      "Prekryj dva vlasce proti sobe.",
+      "Kazdy konec 5x omotej kolem druheho vlasce.",
+      "Oba konce protahni stredovym ockem.",
+      "Navlhci a pomalu dotahni."
+    ],
+    "common_mistakes": [
+      "Ruzny pocet ovinuti",
+      "Prilis kratke volne konce"
+    ],
+    "is_premium": true
+  },
+  {
+    "id": "knot_palomar",
+    "name": "Palomar",
+    "type": "hacek",
+    "steps": [
+      "Zdvoj vlasec a protahni ockem.",
+      "Udelej volny uzel.",
+      "Protahni hacek smyckou.",
+      "Navlhci a dotahni."
+    ],
+    "common_mistakes": [
+      "Prekrizeni smycky",
+      "Dotazeni bez navlhceni"
+    ],
+    "is_premium": true
+  },
+  {
+    "id": "knot_grinner",
+    "name": "Grinner",
+    "type": "hacek",
+    "steps": [
+      "Protahni vlasec ockem.",
+      "Vrat konec zpet a vytvor smycku.",
+      "Volnym koncem obmotej 5x.",
+      "Navlhci a dotahni."
+    ],
+    "common_mistakes": [
+      "Malo ovinuti",
+      "Nespravne vedeni konce"
+    ],
+    "is_premium": true
+  },
+  {
+    "id": "knot_uni_to_uni",
+    "name": "Uni to Uni",
+    "type": "spojovaci",
+    "steps": [
+      "Prekryj dva vlasce.",
+      "Na kazdem konci udelej uni uzel.",
+      "Dotahni oba uzly proti sobe.",
+      "Zkontroluj pevnost."
+    ],
+    "common_mistakes": [
+      "Nerovnomerne uzly",
+      "Kratke konce"
+    ],
+    "is_premium": true
+  },
+  {
+    "id": "knot_smycka_do_smycky",
+    "name": "Smycka do smycky",
+    "type": "spojovaci",
+    "steps": [
+      "Udelej smycku na hlavnim vlasci.",
+      "Udelej smycku na navazci.",
+      "Propoj obe smycky.",
+      "Dotahni a zkontroluj."
+    ],
+    "common_mistakes": [
+      "Prilis mala smycka",
+      "Spatne provleceni"
+    ],
+    "is_premium": false
+  },
+  {
+    "id": "knot_osmicka_stopper",
+    "name": "Stop uzel osmacka",
+    "type": "montaz",
+    "steps": [
+      "Vytvor jednoduche ocko.",
+      "Volny konec obved smyckou.",
+      "Vzniklou osmacku dotahni.",
+      "Uprav delku stopu."
+    ],
+    "common_mistakes": [
+      "Moc volny uzel",
+      "Nepravidelna osmacka"
+    ],
+    "is_premium": false
+  },
+  {
+    "id": "knot_splavek_zarazka",
+    "name": "Zarazka na splavek",
+    "type": "montaz",
+    "steps": [
+      "Pouzij tenkou nit nebo vlasec.",
+      "Udelej vice ovinuti kolem hlavniho vlasce.",
+      "Dotahni stop uzel.",
+      "Zkrac konce."
+    ],
+    "common_mistakes": [
+      "Prilis volne ovinuti",
+      "Prilis kratke konce"
+    ],
+    "is_premium": true
+  },
+  {
+    "id": "knot_navazec_boilie",
+    "name": "Bezuzlovy navazec na boilie",
+    "type": "montaz",
+    "steps": [
+      "Vytvor vlasovy prives.",
+      "Protahni navazec ockem hacku.",
+      "Omotej raminko 6-8x.",
+      "Vrat konec ockem a dotahni."
+    ],
+    "common_mistakes": [
+      "Spatna delka vlasu",
+      "Nespravny smer ovinuti"
+    ],
+    "is_premium": true
+  },
+  {
+    "id": "knot_drop_shot",
+    "name": "Drop shot uzel",
+    "type": "montaz",
+    "steps": [
+      "Protahni vlasec ockem hacku.",
+      "Udelej jednoduchy uzel bez dotazeni.",
+      "Hackem projdi smyckou.",
+      "Dotahni a nech delsi konec na zatez."
+    ],
+    "common_mistakes": [
+      "Kratky konec na zatez",
+      "Spatna orientace hacku"
+    ],
+    "is_premium": true
+  }
+]

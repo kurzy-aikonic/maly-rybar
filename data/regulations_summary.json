@@ -1,0 +1,20 @@
+{
+  "version": "0.1",
+  "sections": [
+    {
+      "id": "rules_mira",
+      "title": "Minimalni lovna mira",
+      "summary": "Ryba mensi nez stanovena mira se musi setrne vratit vode."
+    },
+    {
+      "id": "rules_hajeni",
+      "title": "Doba hajeni",
+      "summary": "V dobe hajeni je lov daneho druhu zakazan."
+    },
+    {
+      "id": "rules_chovani",
+      "title": "Chovani u vody",
+      "summary": "Rybarska mista udrzuj cista, bud ohleduplny a bezpecny."
+    }
+  ]
+}

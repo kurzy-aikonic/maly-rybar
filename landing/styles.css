@@ -1,0 +1,109 @@
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --text: #e6edf3;
+  --muted: #9da7b3;
+  --accent: #00c2a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(980px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 72px 0 56px;
+}
+
+.badge {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.lead {
+  max-width: 680px;
+  color: var(--muted);
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.section.alt {
+  background: var(--panel);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #202733;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--accent);
+  color: #042b26;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.waitlist-form {
+  display: grid;
+  gap: 12px;
+  max-width: 460px;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #2a3341;
+  background: #0f141b;
+  color: var(--text);
+}
+
+.form-message {
+  min-height: 20px;
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid #1f2937;
+  padding: 24px 0 40px;
+}
+
+a {
+  color: #73d8ff;
+}

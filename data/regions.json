@@ -1,0 +1,76 @@
+[
+  {
+    "id": "region_olomoucky",
+    "name": "Olomoucky kraj",
+    "waters": [
+      {
+        "id": "water_ol_001",
+        "name": "Morava - usek A",
+        "type": "reka",
+        "notes": "MVP ukazkove data. Pred pouzitim over aktualni pravidla revíru.",
+        "difficulty": "medium",
+        "target_species": ["Kapr obecny", "Cejn velky", "Stika obecna"]
+      },
+      {
+        "id": "water_ol_002",
+        "name": "Becva - usek B",
+        "type": "reka",
+        "notes": "MVP ukazkove data. Vhodne pro trenink orientace v revirech.",
+        "difficulty": "hard",
+        "target_species": ["Pstruh obecny", "Lipan podhorny", "Jelec tloust"]
+      },
+      {
+        "id": "water_ol_003",
+        "name": "Tovacovsky rybnik - lokalita C",
+        "type": "rybnik",
+        "notes": "MVP ukazkove data. Klidnejsi voda, vhodne i pro zacatecniky.",
+        "difficulty": "easy",
+        "target_species": ["Kapr obecny", "Amur bily", "Lin obecny"]
+      }
+    ]
+  },
+  {
+    "id": "region_moravskoslezsky",
+    "name": "Moravskoslezsky kraj",
+    "waters": [
+      {
+        "id": "water_ms_001",
+        "name": "Odra - usek A",
+        "type": "reka",
+        "notes": "MVP ukazkove data. Nutne overit lokalni pravidla pred lovem.",
+        "difficulty": "medium",
+        "target_species": ["Candat obecny", "Bolen dravy", "Okoun ricni"]
+      },
+      {
+        "id": "water_ms_002",
+        "name": "Opava - usek B",
+        "type": "reka",
+        "notes": "MVP ukazkove data s orientacnim profilem druhu.",
+        "difficulty": "easy",
+        "target_species": ["Jelec jesen", "Plotice obecna", "Kapr obecny"]
+      }
+    ]
+  },
+  {
+    "id": "region_jihomoravsky",
+    "name": "Jihomoravsky kraj",
+    "waters": [
+      {
+        "id": "water_jm_001",
+        "name": "Dyje - usek A",
+        "type": "reka",
+        "notes": "MVP ukazkove data. Vetsi variabilita podminek behem sezony.",
+        "difficulty": "medium",
+        "target_species": ["Sumec velky", "Candat obecny", "Kapr obecny"]
+      },
+      {
+        "id": "water_jm_002",
+        "name": "Novomlynske nadrze - lokalita B",
+        "type": "nadrz",
+        "notes": "MVP ukazkove data. Dulezita priprava vybavy podle vetru.",
+        "difficulty": "hard",
+        "target_species": ["Stika obecna", "Candat obecny", "Bolen dravy"]
+      }
+    ]
+  }
+]
