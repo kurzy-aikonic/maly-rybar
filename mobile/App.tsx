@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 import { AppProvider } from "./src/context/AppContext";
 import { AtlasScreen } from "./src/screens/AtlasScreen";
@@ -13,20 +14,59 @@ import { WaterScreen } from "./src/screens/WaterScreen";
 
 const Tab = createBottomTabNavigator();
 
+type ErrorBoundaryState = { error: Error | null };
+
+class RootErrorBoundary extends React.Component<
+  { children: React.ReactNode },
+  ErrorBoundaryState
+> {
+  state: ErrorBoundaryState = { error: null };
+
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    return { error };
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <View style={errorStyles.wrap}>
+          <Text style={errorStyles.title}>Chyba pri startu</Text>
+          <ScrollView style={errorStyles.scroll}>
+            <Text style={errorStyles.mono}>{this.state.error.message}</Text>
+            <Text style={errorStyles.hint}>
+              Zkontroluj terminal Metro a aktualizuj Expo Go na nejnovejsi verzi (SDK 54).
+            </Text>
+          </ScrollView>
+        </View>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+const errorStyles = StyleSheet.create({
+  wrap: { flex: 1, backgroundColor: "#0d1117", padding: 16, paddingTop: 48 },
+  title: { color: "#ff7b72", fontSize: 18, fontWeight: "800", marginBottom: 12 },
+  scroll: { flex: 1 },
+  mono: { color: "#e6edf3", fontFamily: "monospace", fontSize: 12 },
+  hint: { color: "#9da7b3", marginTop: 16, fontSize: 14 }
+});
+
 export default function App() {
   return (
-    <AppProvider>
-      <NavigationContainer>
-        <StatusBar style="light" />
-        <Tab.Navigator
-          screenOptions={{
-            headerStyle: { backgroundColor: "#0d1117" },
-            headerTintColor: "#e6edf3",
-            tabBarStyle: { backgroundColor: "#0d1117", borderTopColor: "#202733" },
-            tabBarActiveTintColor: "#00c2a8",
-            tabBarInactiveTintColor: "#9da7b3"
-          }}
-        >
+    <RootErrorBoundary>
+      <AppProvider>
+        <NavigationContainer>
+          <StatusBar style="light" />
+          <Tab.Navigator
+            screenOptions={{
+              headerStyle: { backgroundColor: "#0d1117" },
+              headerTintColor: "#e6edf3",
+              tabBarStyle: { backgroundColor: "#0d1117", borderTopColor: "#202733" },
+              tabBarActiveTintColor: "#00c2a8",
+              tabBarInactiveTintColor: "#9da7b3"
+            }}
+          >
           <Tab.Screen
             name="Domu"
             component={HomeScreen}
@@ -41,7 +81,7 @@ export default function App() {
             component={AtlasScreen}
             options={{
               tabBarIcon: ({ color, size }) => (
-                <Ionicons name="fish-outline" size={size} color={color} />
+                <Ionicons name="fish" size={size} color={color} />
               )
             }}
           />
@@ -73,7 +113,8 @@ export default function App() {
             }}
           />
         </Tab.Navigator>
-      </NavigationContainer>
-    </AppProvider>
+        </NavigationContainer>
+      </AppProvider>
+    </RootErrorBoundary>
   );
 }

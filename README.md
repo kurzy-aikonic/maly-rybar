@@ -57,6 +57,14 @@ npm run start:online
 
 Pfipadne docasne vypni VPN / zmen DNS (napr. 1.1.1.1) a zkus znovu.
 
+### Expo Go pise „Something went wrong“
+
+1. Aktualizuj **Expo Go** v App Store / Google Play (projekt pouziva **Expo SDK 54**).
+2. Vypni u projektu **New Architecture** pokud mas problemy — v `mobile/app.json` je
+   `newArchEnabled: false`.
+3. Podivej se do **terminálu Metro**: pri otevreni projektu casto uvidis cerveny text s presnou chybou.
+4. Zkus **Reload** v Expo Go (vytoct menu / potraseni telefonem) nebo `r` v Metro.
+
 ## Bezpecnost
 
 - `SUPABASE_SERVICE_ROLE_KEY` je pouze server-side tajemstvi.
