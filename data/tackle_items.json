@@ -1,0 +1,263 @@
+{
+  "title": "Poznávání výbavy",
+  "intro": "Jak vypadá základní náčiní, k čemu slouží a jak se skládá jednoduchá montáž. Konkrétní značky, síly prutů a pravidla vždy domluví dospělý podle revíru.",
+  "footnote": "Povolenka, dodržování mír a hájení a bezpečnost u vody jsou vždy na dospělém držiteli povolenky. Tento průvodce je jen orientace pro děti.",
+  "categories": [
+    { "id": "cat_montaz", "title": "Montáž a návody" },
+    { "id": "cat_pruty", "title": "Pruty" },
+    { "id": "cat_navijaky", "title": "Navijáky a vlasec" },
+    { "id": "cat_doplnky", "title": "Podběrák, vezírek a pomůcky" }
+  ],
+  "items": [
+    {
+      "id": "tackle_plavana_navod",
+      "category_id": "cat_montaz",
+      "title": "Plavaná — základ montáže",
+      "subtitle": "Splávek, olůvko, háček a vlasec na kapra nebo plotici",
+      "is_premium": false,
+      "method_tags": ["float"],
+      "paragraphs": [
+        "U plavané ryba táhne nástrahu a splávek na hladině ukazuje záběr: když se splávek stáhne nebo zmizí, často znamená, že ryba bere."
+      ],
+      "assembly_steps": [
+        {
+          "title": "1. Navlékni vlasec",
+          "body": "Vlasec protáhni očky prutu od špičky k navijáku. Délku a sílu vlasce vybírá dospělý podle ryby a revíru."
+        },
+        {
+          "title": "2. Olůvko a splávek",
+          "body": "Na vlasec se dává olůvko (brok), aby nástraha klesla do vody. Nad háček se uváže nebo nasadí splávek, který drží montáž ve správné hloubce."
+        },
+        {
+          "title": "3. Háček a nástraha",
+          "body": "Na konec vlasce je háček. Nástraha (červ, kukuřice, těsto…) se zapíchne tak, aby držela, ale ryba mohla bezpečně sahat."
+        },
+        {
+          "title": "4. Hloubka",
+          "body": "Hloubku nastaví dospělý posunutím bročků nebo délkou mezi splávkem a háčkem — záleží na proudění a dně."
+        }
+      ],
+      "atlas_links": [
+        { "fish_id": "fish_kapr_obecny", "label": "Kapr — tipy a montáž v atlasu" },
+        { "fish_id": "fish_plotice_obecna", "label": "Plotice v atlasu" }
+      ],
+      "disclaimer": "Na vodě vždy nastavuje montáž dospělý; háčky jsou ostré."
+    },
+    {
+      "id": "tackle_polozena_navod",
+      "category_id": "cat_montaz",
+      "title": "Položená / feeder — základ",
+      "subtitle": "Prut na dně, často s krmítkem a krátkým návazcem",
+      "is_premium": false,
+      "method_tags": ["ledger"],
+      "paragraphs": [
+        "U položené leží nástraha na dně nebo těsně nad ním. Feeder znamená malé krmítko, které při nahození donese návnadu k háčku."
+      ],
+      "assembly_steps": [
+        {
+          "title": "1. Hlavní vlasec",
+          "body": "Silnější vlasec jde z navijáku přes očka prutu. Na konec se většinou dává obratlík nebo spoj pro návazec."
+        },
+        {
+          "title": "2. Návazec a háček",
+          "body": "Kratší tenčí návazec s háčkem se váže k hlavnímu vlasci. Délku a sílu určí dospělý."
+        },
+        {
+          "title": "3. Zátěž / krmítko",
+          "body": "Olůvko nebo feederové krmítko drží montáž na místě a může krmit okolí háčku."
+        },
+        {
+          "title": "4. Nahození",
+          "body": "Nahazuje se opatrně — kolem nikoho, bez háčku volně visícího vzadu. Učí tě dospělý."
+        }
+      ],
+      "atlas_links": [
+        { "fish_id": "fish_kapr_obecny", "label": "Kapr v atlasu" },
+        { "fish_id": "fish_lin_obecny", "label": "Lín v atlasu" }
+      ]
+    },
+    {
+      "id": "tackle_privlac_navod",
+      "category_id": "cat_montaz",
+      "title": "Přívlač — o čem to je",
+      "subtitle": "Umělá nástraha (wobler, třpytka) tažená prutem",
+      "is_premium": false,
+      "method_tags": ["spin"],
+      "paragraphs": [
+        "Přívlačí se loví aktivním přitahováním nástrahy ve vodě. Používá se kratší pevnější prut a naviják, který dobře odvíjí a přívá vlasce."
+      ],
+      "bullets": [
+        "Nástraha připomíná malou rybičku nebo hmyz — barvy a tvary jsou různé.",
+        "Háček je součástí wobleru nebo třpytky; zaseknutí a zdolání dělá vždy dospělý podle velikosti ryby.",
+        "Na některých revírech přívlač nesmí — platí pravidla revíru."
+      ],
+      "assembly_steps": [
+        {
+          "title": "1. Uzel nebo spoj",
+          "body": "Nástraha se váže na konec vlasce pevným uzlem (často učí děti úvaz v sekci Úvazy)."
+        },
+        {
+          "title": "2. Kontrola oček",
+          "body": "Před rybařením zkontroluj, že vlasec není v očkách zamotaný a prut je suchý a v pořádku."
+        }
+      ],
+      "atlas_links": [
+        { "fish_id": "fish_okoun_ricni", "label": "Okoun říční v atlasu" },
+        { "fish_id": "fish_stika_obecna", "label": "Štika obecná v atlasu" }
+      ]
+    },
+    {
+      "id": "tackle_muska_navod",
+      "category_id": "cat_montaz",
+      "title": "Muškaření — základ",
+      "subtitle": "Lehký prut, muška a jemný vlasec",
+      "is_premium": false,
+      "method_tags": ["fly"],
+      "paragraphs": [
+        "Muška je drobná umělá nástraha z peří nebo syntetiky, která napodobuje hmyz na hladině nebo pod ní. Je to spíš pokročilejší technika — začátečník se učí s dospělým."
+      ],
+      "bullets": [
+        "Prut je dlouhý a ohebný, hodí se k jemnému házení.",
+        "Vlasec je často silnější na špičce (šňůrka) a na konci tenký návazec.",
+        "Na pstruhových revírech platí zvlášť přísná pravidla — vždy je řeší dospělý."
+      ],
+      "atlas_links": [
+        { "fish_id": "fish_pstruh_obecny_potocni", "label": "Pstruh potoční v atlasu" },
+        { "fish_id": "fish_pstruh_duhovy", "label": "Pstruh duhový v atlasu" }
+      ]
+    },
+    {
+      "id": "tackle_obecne_pomucky",
+      "category_id": "cat_doplnky",
+      "title": "Obecné pomůcky u vody",
+      "subtitle": "Co často uvidíš v brašně rybáře",
+      "is_premium": false,
+      "method_tags": ["other"],
+      "paragraphs": [
+        "Kromě prutu a navijáku má rybář u sebe drobnosti, které pomáhají při lovu i při vracení ryby."
+      ],
+      "bullets": [
+        "Kleště nebo peán na vyjmutí háčku",
+        "Podložka pod rybu při focení nebo měření",
+        "Dezinfekce na háček podle zvyklostí a pravidel revíru",
+        "Čistá voda na ruce a hadřík"
+      ]
+    },
+    {
+      "id": "tackle_prut_plavana",
+      "category_id": "cat_pruty",
+      "title": "Prut na plavanou",
+      "subtitle": "Delší prut, citlivá špička",
+      "is_premium": false,
+      "method_tags": ["float"],
+      "paragraphs": [
+        "Pruty na plavanou bývají často delší, aby šlo nahodit dál a lépe ovládat splávek. Špička je pružná — ukáže opatrný záběr malé ryby."
+      ],
+      "bullets": [
+        "Akce prutu popisuje, jak moc se ohýbá — vybírá dospělý.",
+        "K prutu patří naviják s vlascem nebo šňůrou podle způsobu lovu."
+      ]
+    },
+    {
+      "id": "tackle_prut_feeder",
+      "category_id": "cat_pruty",
+      "title": "Prut na feeder / položenou",
+      "subtitle": "Tužší prut, zvládne zátěž krmítka",
+      "is_premium": false,
+      "method_tags": ["ledger"],
+      "paragraphs": [
+        "Feederové pruty mají obvykle dvě špičky nebo výměnné špičky různé tuhosti — signalizují záběr, i když ryba jen šťouchne do nástrahy na dně."
+      ]
+    },
+    {
+      "id": "tackle_privlacovy_prut",
+      "category_id": "cat_pruty",
+      "title": "Přívlačový prut",
+      "subtitle": "Kratší, pevnější, pro nástrahy s háčky",
+      "is_premium": false,
+      "method_tags": ["spin"],
+      "paragraphs": [
+        "Přívlačové pruty jsou kratší než ty na plavanou, aby se s nimi dobře házelo a vedlo nástrahu přesněji. Mají očka větší, někdy „teleskop“ nebo dvoudílné spoje."
+      ]
+    },
+    {
+      "id": "tackle_navijak_spinning",
+      "category_id": "cat_navijaky",
+      "title": "Naviják (spinning)",
+      "subtitle": "Vlasec se odvíjí z pevné cívky",
+      "is_premium": false,
+      "paragraphs": [
+        "Spinningový naviják má pevnou cívku; vlasec se při nahazování odvíjí a při otáčení klikou se navíjí zpět. Je běžný u plavané, feederu i přívlače podle velikosti."
+      ],
+      "assembly_steps": [
+        {
+          "title": "Jak to držet",
+          "body": "Před nahozením otevři závěr cívky palcem, drž vlasec prstem u prutu, švihni prutem a v pravý okamžik pusť vlasec — učí tě dospělý, ať nikoho nezachytíš háčkem."
+        }
+      ]
+    },
+    {
+      "id": "tackle_navijak_baitrunner",
+      "category_id": "cat_navijaky",
+      "title": "Naviják s volnoběhem (baitrunner)",
+      "subtitle": "Často u kaprařiny — ryba může táhnout vlasec",
+      "is_premium": true,
+      "method_tags": ["float", "ledger"],
+      "paragraphs": [
+        "Má speciální režim, kdy cívka volně točí a ryba může odplavat s nástrahou v ústech; pak se zasekne hlavní brzda. Nastavení vždy dělá dospělý."
+      ]
+    },
+    {
+      "id": "tackle_splavek_typy",
+      "category_id": "cat_montaz",
+      "title": "Splávky — na co si dát pozor",
+      "subtitle": "Tvar a nosnost podle hloubky a proudění",
+      "is_premium": false,
+      "method_tags": ["float"],
+      "bullets": [
+        "Wagler — dlouhý splávek do klidnější vody.",
+        "Dřívko nebo pevný splávek — často na tekoucí vodě.",
+        "Nosnost musí odpovídat olůvkům, jinak splávek nesedí správně."
+      ]
+    },
+    {
+      "id": "tackle_podberak",
+      "category_id": "cat_doplnky",
+      "title": "Podběrák",
+      "subtitle": "Síťka na tyči — bezpečné podbrání ryby",
+      "is_premium": false,
+      "paragraphs": [
+        "Podběrák má kruhovou nebo trojúhelníkovou hlavu a síťku. Používá se, když je ryba u břehu a potřebuješ ji zvednout bez pádu a zbytečného tahání za vlasec."
+      ],
+      "bullets": [
+        "Mokrou síťku neskladáš na horko do igelitu — radí dospělý, ať neplesniví.",
+        "Velikost hlavy volí dospělý podle očekávané ryby."
+      ]
+    },
+    {
+      "id": "tackle_vezirek",
+      "category_id": "cat_doplnky",
+      "title": "Vezírek (vezír)",
+      "subtitle": "Síť ve vodě pro dočasné uložení ryb",
+      "is_premium": false,
+      "paragraphs": [
+        "Vezírek je ponořená síťová „kapsa“ ve vodě. Někdy se do ní dává úlovek na chvíli před měřením nebo vrácením — podle pravidel revíru a domluvy s dospělým."
+      ],
+      "disclaimer": "Ne vždy smíš rybu v vezírku nechat dlouho; platí pravidla revíru a ohledu ke zdraví ryby."
+    },
+    {
+      "id": "tackle_metr_meritko",
+      "category_id": "cat_doplnky",
+      "title": "Metr a měřítko",
+      "subtitle": "Kontrola lovné míry",
+      "is_premium": false,
+      "paragraphs": [
+        "Lovná míra je nejmenší délka ryby, kterou smíš ponechat — menší rybu musíš šetrně vrátit. Měří se od špičky tlamy po konec ocasu, jak ukáže dospělý."
+      ],
+      "bullets": [
+        "V atlasu má každý druh uvedenou zákonnou míru v cm.",
+        "Bez měření neříkej „můžu si ji nechat“ — vždy ověř s dospělým."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Výbava u vody",
+  "intro": "Orientační seznam pro výpravu. Konkrétní věci vždy domluví dospělý podle revíru, počasí a délky výletu.",
+  "sections": [
+    {
+      "id": "docs",
+      "title": "Doklady a plán",
+      "items": [
+        {
+          "id": "gear_doc_perm",
+          "label": "Platná povolenka a doklady k lovu má dospělý u sebe.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_doc_rules",
+          "label": "Víme aktuální pravidla revíru (míry, hájení, způsob lovu).",
+          "is_premium": false
+        },
+        {
+          "id": "gear_doc_weather",
+          "label": "Zkontrolované počasí a bezpečná cesta k vodě a zpět.",
+          "is_premium": false
+        }
+      ]
+    },
+    {
+      "id": "tackle",
+      "title": "Prut, montáž a náčiní",
+      "items": [
+        {
+          "id": "gear_rod_reel",
+          "label": "Prut a naviják odpovídají cílové rybě a revíru.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_line",
+          "label": "Vlasec nebo šňůra v pořádku — bez oděrů a uzlů na hraně.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_hooks",
+          "label": "Háčky, broky, obratlíky / montáž podle domluvy.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_landing",
+          "label": "Podběrák nebo jiný bezpečný způsob zdolání dle domluvy.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_measure",
+          "label": "Metr nebo měřítko na kontrolu lovné míry.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_extras",
+          "label": "Kleště na háček, podložka pod rybu, dezinfekce dle zvyklostí.",
+          "is_premium": true
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "title": "Pohodlí, pitný režim, ochrana",
+      "items": [
+        {
+          "id": "gear_drink",
+          "label": "Pití a svačina — zvlášť v horku.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_clothes",
+          "label": "Oblečení a obuv podle počasí; náhradní vrstva do batohu.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_sun",
+          "label": "Čepice / krém na slunce podle sezony a domluvy.",
+          "is_premium": false
+        },
+        {
+          "id": "gear_light",
+          "label": "Svítilna nebo čelovka, pokud se vracíme za tmy.",
+          "is_premium": true
+        }
+      ]
+    }
+  ]
+}

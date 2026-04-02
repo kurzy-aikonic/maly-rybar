@@ -1,10 +1,10 @@
 import type { ExamHorizonId } from "../types/profile";
 
 const LABELS: Record<ExamHorizonId, string> = {
-  do_3_mesicu: "Zkousky do 3 mesicu",
-  do_roka: "Zkousky do roku",
-  jen_uceni: "Zatim jen uceni a zabava",
-  nezacinam: "Teprve zacinam"
+  do_3_mesicu: "Zkoušky do 3 měsíců",
+  do_roka: "Zkoušky do roku",
+  jen_uceni: "Zatím jen učení a zábava",
+  nezacinam: "Teprve začínám"
 };
 
 export function examHorizonLabel(id: ExamHorizonId): string {

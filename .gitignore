@@ -16,3 +16,15 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Naskenované karty (jen lokální vstup pro OCR) — v gitu je pravda v data/fish.json
+source_cards/
+
+# Lokální Python balíčky pro PDF audit (např. pip install -t .pdf_tools)
+.pdf_tools/
+
+# OCR výstupy z Tesseractu (znovu vygeneruješ z karet)
+mobile/ocr_text/
+
+# Souhrn z OCR (npm run parse-fish-ocr v mobile/)
+data/fish_ocr_parsed.json

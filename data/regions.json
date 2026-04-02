@@ -17,7 +17,7 @@
         "type": "reka",
         "notes": "MVP ukazkove data. Vhodne pro trenink orientace v revirech.",
         "difficulty": "hard",
-        "target_species": ["Pstruh obecny", "Lipan podhorny", "Jelec tloust"]
+        "target_species": ["Pstruh obecny forma potocni", "Lipan podhorny", "Jelec tloust"]
       },
       {
         "id": "water_ol_003",

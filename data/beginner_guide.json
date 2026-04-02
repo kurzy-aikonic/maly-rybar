@@ -1,0 +1,30 @@
+{
+  "title": "Průvodce pro začátečníka",
+  "intro": "Stručné kroky v pořadí. Podrobnosti a pravidla vždy doplňuje dospělý podle aktuálního rybařského řádu a revíru.",
+  "steps": [
+    {
+      "title": "1. Domluv se s dospělým",
+      "body": "Kam jedete, jak dlouho budete u vody a kdo tě bude hlídat. Bez dohledu dospělého k vodě nechoď."
+    },
+    {
+      "title": "2. Ověř pravidla",
+      "body": "Povolenka, místo lovu a místní omezení. V aplikaci máš orientační data — před lovem platí oficiální zdroje (např. ČRS)."
+    },
+    {
+      "title": "3. Projdi checklisty a testy v aplikaci",
+      "body": "Než vyrazíš — bezpečnost. Pak výbava — co sbalit. V záložce Testy je i příprava na průkaz: druhy, míry a hájení podle atlasu. Ušetří to zapomenuté věci i zbytečný stres."
+    },
+    {
+      "title": "4. Nauč se základ uzlu",
+      "body": "V sekci Uzly si v klidu projdi jeden spolehlivý uzel a zkus ho doma na silnější šňůře, než půjdeš poprvé na ryby."
+    },
+    {
+      "title": "5. U vody: klid a ohled",
+      "body": "Nespěchej, nenahazuj, když někdo stojí za tebou. Rybu zpracovávej co nejšetrněji a přírodu nech čistou."
+    },
+    {
+      "title": "6. Zapisuj úlovky",
+      "body": "Deník v aplikaci ti pomůže pamatovat si revír, rybu a co fungovalo — a trénuješ přitom pozornost k detailům."
+    }
+  ]
+}

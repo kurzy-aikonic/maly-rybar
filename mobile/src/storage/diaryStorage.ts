@@ -1,11 +1,10 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+import { STORAGE_CATCH_ENTRIES } from "../constants/storageKeys";
 import type { CatchEntry } from "../types/catchEntry";
 
-const KEY = "maly_rybar_catch_entries";
-
 export async function loadEntries(): Promise<CatchEntry[]> {
-  const raw = await AsyncStorage.getItem(KEY);
+  const raw = await AsyncStorage.getItem(STORAGE_CATCH_ENTRIES);
   if (!raw) return [];
   try {
     const parsed = JSON.parse(raw) as CatchEntry[];
@@ -16,21 +15,23 @@ export async function loadEntries(): Promise<CatchEntry[]> {
 }
 
 export async function persistEntries(entries: CatchEntry[]): Promise<void> {
-  await AsyncStorage.setItem(KEY, JSON.stringify(entries));
+  await AsyncStorage.setItem(STORAGE_CATCH_ENTRIES, JSON.stringify(entries));
 }
 
 export async function addCatchEntry(
-  input: Omit<CatchEntry, "id" | "createdAt">,
+  input: Omit<CatchEntry, "id" | "createdAt"> & { id?: string },
   options: { maxVisible: number }
 ): Promise<CatchEntry[]> {
   const now = new Date().toISOString();
+  const id = input.id ?? `${Date.now()}`;
   const entry: CatchEntry = {
-    id: `${Date.now()}`,
+    id,
     createdAt: now,
     fishName: input.fishName.trim(),
     lengthCm: input.lengthCm,
     water: input.water?.trim() || undefined,
-    notes: input.notes?.trim() || undefined
+    notes: input.notes?.trim() || undefined,
+    photoStoragePath: input.photoStoragePath
   };
 
   const prev = await loadEntries();

@@ -1,24 +1,28 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "scheme": "malyrybar",
+    "name": "Malý rybář",
+    "slug": "maly-rybar",
     "version": "1.0.0",
+    "description": "Příprava na rybářský průkaz pro děti — atlas ryb, testy, míry, hájení a praxe u vody.",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0d1117"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "cz.malyrybar.app"
     },
     "android": {
+      "package": "cz.malyrybar.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0d1117"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
@@ -26,6 +30,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Malý rybář potřebuje přístup ke galerii, pokud chceš k úlovku přidat fotku."
+        }
+      ]
+    ]
   }
 }

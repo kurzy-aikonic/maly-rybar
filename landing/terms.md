@@ -1,19 +1,11 @@
-# Podminky pouziti (navrh)
+# Obchodní podmínky
 
-Tento dokument je navrh a pred spustenim je nutne pravni overeni.
+**Plné znění pro návštěvníky webu:**
 
-## Ucel webu
+**[terms.html](./terms.html)** — na ostrém webu např. `/landing/terms.html`
 
-Web slouzi ke sběru zajemcu o aplikaci Maly rybar.
+Soubor `.md` v repu odkazuje na HTML verzi zobrazenou v prohlížeči.
 
-## Odpovednost
+---
 
-- Informace na webu maji informativni charakter.
-- Funkce aplikace se mohou do oficialniho vydani zmenit.
-
-## Kontakt
-
-Pred spustenim doplnit:
-- provozovatele,
-- ICO,
-- kontaktni e-mail.
+_Před prodejem v App Store / Google Play doplň zvláštní podmínky pro daný kanál. Doporučujeme právní revizi._

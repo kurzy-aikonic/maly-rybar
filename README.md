@@ -40,6 +40,15 @@ npm run start
 
 Metro nacita JSON z korenoveho `data/` (sdileny obsah s webem).
 
+### Kontrola obsahu (atlas, kviz, reviry, PDF karet, mobilni obrazky)
+
+```bash
+cd mobile
+npm run audit-data
+```
+
+Spusti `scripts/audit-app-data.mjs`: overi strukturu `data/*.json`, odkazy `similar_species` a `regions.target_species`, otazky v kvizu, volitelne parovani `source_cards/ryby.pdf` s atlasem (vyzaduje `pypdf` v `.pdf_tools` / PYTHONPATH) a nakonec `check-fish-assets` (mapa obrazku v mobilu).
+
 ### Bez App Store / bez Xcode (nahled v prohlizeci)
 
 Kdyz ti nejde App Store nebo nechces instalovat Xcode, spust Metro a v terminalu zmackni **`w`** (web),
@@ -54,6 +63,26 @@ Balicky `react-dom` a `react-native-web` uz jsou v projektu. Kdyby `npx expo ins
 padalo na siti, pouzij jen `npm install` v `mobile/`.
 
 Kompletni mobilni chovani je nejblizsi na **Androidu / iPhonu**; web staci na rychly nahled UI.
+
+### Supabase pro mobil (auth + denik)
+
+1. V Supabase SQL editoru spust migrace z `supabase/migrations/` (vcetne
+   `20260401_profiles_and_diary.sql` pro `profiles` a `diary_entries`).
+2. V `mobile/` zkopiruj `.env.example` do `.env` a dopln URL + **anon** klic (ne service role).
+3. V Supabase: **Authentication → URL configuration → Redirect URLs** pridej:
+   - `malyrybar://auth/callback` (scheme z `mobile/app.json`) — **telefon / Expo development build**
+   - **`http://localhost:8081/**`** — **Expo web (`w`)**: magic link v e-mailu presmeruje do prohlizece na localhost (port si over v terminalu u Metro, typicky 8081). Bez tohoto Supabase odkaz zamitne.
+   - pro Expo Go: `exp://127.0.0.1:8081/--/auth/callback` s **tvym** portem (nebo `exp://**` jen pokud ti to bezpecnostne vyhovuje)
+
+Magic link v profilu aplikace; po prihlaseni se denik slouci mistni + vzdaleny. **Lokalni web** auth po upravach v kodu funguje; drive chybelo nacist tokeny z URL a casto i redirect whitelist pro localhost.
+
+### Web: „Failed to fetch“ pri magic linku
+
+Neni to kodova chyba v Expo, ale **sit / konfigurace**:
+
+1. `.env` v `mobile/` — `EXPO_PUBLIC_SUPABASE_URL` musi byt **presne** Project URL z Supabase (napr. `https://xxxxx.supabase.co`), **bez** uvozovek a bez koncoveho `/`. Po zmene **restart Metro** a **tvrdy reload** prohlizece.
+2. **VPN, firemni proxy, blokator reklam** — zkus docasne vypnout; v Chrome **F12 → Sit (Network)** udelej znovu odeslani a podivej se, jestli request padá na `*.supabase.co`.
+3. **Projekt v Supabase** — nesmi byt paused; v dashboardu vyzkousej, ze API odpovida.
 
 ### Expo hlasi `TypeError: fetch failed` pri `expo start`
 
@@ -105,6 +134,13 @@ tunnel taky potrebuje, aby Mac dosahoval na Expo.
    Tim jde provoz **pres USB**, obchazi cast problemu Wi-Fi a „remote update“.
 5. Bez USB: stejna Wi-Fi, VPN **vypnuta** na telefonu i Macu, rucne `exp://192.168.x.x:PORT` z terminálu.
 6. Aktualizuj **Expo Go** z Obchodu Play; pripadne **vymaz dat** u Expo Go.
+
+### Premium — RevenueCat (fáze 6)
+
+- Nákupní logika: `react-native-purchases`, **`Purchases.logIn(uuid)`** = Supabase `user.id`.
+- Pravda na serveru: Vercel **`/api/revenuecat-webhook`** zapisuje `profiles.is_premium` (service role).
+- Návod krok za krokem: [docs/FAZE_6_REVENUECAT.md](docs/FAZE_6_REVENUECAT.md).
+- Na ostrém účtu nefunguje přepínač Premium z dev — stav bere aplikace ze Supabase po webhooku.
 
 ## Bezpecnost
 

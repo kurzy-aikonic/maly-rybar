@@ -3,141 +3,289 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maly rybar - Uceni i zabava u vody</title>
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0e14" />
     <meta
       name="description"
-      content="Maly rybar uci deti 8-15 let na rybarske zkousky pomoci atlasu ryb, testu a hernich misi."
+      content="Malý rybář — aplikace pro děti 8–15 let: atlas ryb, příprava na rybářský průkaz, testy a praxe u vody. Pro rodiče: přehledný pokrok bez sociální sítě. Čekací listina."
     />
+    <meta
+      name="keywords"
+      content="rybářský průkaz, příprava na zkoušku, atlas ryb, děti, rybaření, lovná míra, hájení, Malý rybář"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Malý rybář" />
+    <!-- Po nasazení doplň canonical a og:url na produkční URL. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:title" content="Malý rybář — příprava na průkaz s přehledem a respektem k vodě" />
+    <meta
+      property="og:description"
+      content="Učení pro děti, klid pro rodiče: atlas, testy, úvazy a deník. Bez chatů s cizími. Zapiš se na čekací listinu."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Malý rybář — učení i zábava u vody" />
+    <meta
+      name="twitter:description"
+      content="Atlas ryb, testy a příprava na rybářský průkaz. Čekací listina na aplikaci."
+    />
+    <title>Malý rybář — příprava na rybářský průkaz pro děti | atlas a testy</title>
+    <link rel="preload" href="./sumec-hacek.webp" as="image" type="image/webp" />
+    <link rel="preload" href="./styles.css" as="style" />
     <link rel="stylesheet" href="./styles.css" />
+    <!-- Po nasazení doplň absolutní URL pro náhledy na sítích: -->
+    <meta property="og:image" content="/landing/sumec-hacek.webp" />
+    <meta name="twitter:image" content="/landing/sumec-hacek.webp" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Malý rybář",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "iOS, Android",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CZK" },
+        "description": "Mobilní aplikace pro přípravu dětí na rybářský průkaz — atlas ryb, testy, míry, hájení a praxe u vody.",
+        "inLanguage": "cs-CZ"
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Přeskočit na obsah</a>
+
     <header class="hero">
-      <div class="container">
-        <p class="badge">Nova aplikace pro deti 8-15 let</p>
-        <h1>Dite zvladne rybarske zkousky s klidem a zabavou</h1>
-        <p class="lead">
-          Atlas ryb, testy, uzly, denik ulovku a denni mise v jedne aplikaci.
-          Prihlas se na cekaci listinu a ziskej early access + startovni slevu na Premium.
-        </p>
-        <a href="#waitlist" class="btn">Chci pristup do bety</a>
+      <div class="container hero-grid">
+        <div>
+          <p class="badge"><span class="badge-emoji" aria-hidden="true">🎣</span> Pro děti 8–15 let a jejich parťáky</p>
+          <h1>Příprava na rybářský průkaz, která dává smysl — s úctou k vodě i vám doma</h1>
+          <p class="lead">
+            <strong>Malý rybář</strong> spojuje atlas ryb, krátké testy a praktické návyky u vody. Dítě vidí pokrok,
+            vy máte jistotu, že jde o <strong>výuku</strong> — ne o sociální síť ani chat s cizími lidmi.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#waitlist" class="btn">Chci vědět o startu první</a>
+            <a href="#pro-deti" class="btn btn-ghost">Co z toho má dítě</a>
+          </div>
+          <div class="trust-strip" role="list">
+            <span role="listitem"><span class="ic" aria-hidden="true">✓</span> Zaměřeno na české ryby a pravidla</span>
+            <span role="listitem"><span class="ic" aria-hidden="true">✓</span> Rodičovský přehled bez „feedu“</span>
+            <span role="listitem"><span class="ic" aria-hidden="true">✓</span> Údaje podle GDPR — transparentně níže</span>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-labelledby="hero-photo-caption">
+          <div class="hero-photo-glow" aria-hidden="true"></div>
+          <div class="hero-photo-frame">
+            <img
+              class="hero-photo"
+              src="./sumec-hacek.webp"
+              alt="Chvíle u vody: ryba a rybářské náčiní — tak nějak vypadá řemeslo, kterému se Malý rybář učí zodpovědně"
+              width="1024"
+              height="559"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </div>
+          <figcaption id="hero-photo-caption" class="hero-photo-caption">
+            Opravdová voda, opravdová příprava — v aplikaci atlas, pravidla a nácvik krok za krokem.
+          </figcaption>
+        </figure>
       </div>
     </header>
 
-    <main>
-      <section class="section">
+    <main id="main">
+      <section id="pro-deti" class="section" aria-labelledby="sec-kids">
         <div class="container">
-          <h2>Proc to funguje</h2>
+          <div class="kid-band">
+            <h2 id="sec-kids">Ahoj, budoucí rybáři</h2>
+            <p class="kid-line">V aplikaci tě čeká spíš dobrodružství než nuda:</p>
+            <ul class="kid-list">
+              <li><strong>Ryby jako na kartách</strong> — poznáš je podle znáků, u některých i z fotky.</li>
+              <li><strong>Testy na zkoušku</strong> — krátké kola, hned vidíš, co zvládáš.</li>
+              <li><strong>Body a úroveň</strong> — každý den můžeš posunout laťku o kousek výš.</li>
+              <li><strong>U vody</strong> — úvazy, bezpečnost a tipy, až půjdeš s dospělým na ryby.</li>
+            </ul>
+            <p class="hint" style="margin-top: 16px; margin-bottom: 0">
+              Na řece a rybníku vždycky platí pravidla a péče dospělého — aplikace tě na to připraví, nenahradí.
+            </p>
+          </div>
+
+          <div class="section-head">
+            <h2>Proč to dává smysl</h2>
+            <p class="sub">Krátké úseky, jasný cíl — aby příprava nebyla stresem.</p>
+          </div>
           <div class="grid">
             <article class="card">
-              <h3>Uceni po malych krocich</h3>
-              <p>Kratke lekce a testy, ktere dite zvladne i za 5 minut denne.</p>
+              <div class="card-icon teal" aria-hidden="true">📚</div>
+              <h3>Malé kroky</h3>
+              <p>I pět minut denně stačí. Látku dáváme po soustech, ne jako šedý telefonní seznam.</p>
             </article>
             <article class="card">
-              <h3>Jasny pokrok</h3>
-              <p>XP body, levely a streak ukazuji, ze priprava jde spravnym smerem.</p>
+              <div class="card-icon sun" aria-hidden="true">📈</div>
+              <h3>Viditelný pokrok</h3>
+              <p>Úrovně a série dní motivují — bez soutěže s neznámými lidmi z internetu.</p>
             </article>
             <article class="card">
-              <h3>Praxe u vody</h3>
-              <p>Atlas ryb, uzly a denik ulovku dela z aplikace partaka i po zkouskach.</p>
+              <div class="card-icon water" aria-hidden="true">🌊</div>
+              <h3>Od učebnice k vodě</h3>
+              <p>Atlas, úvazy a poznámky z výprav patří k sobě — učení má pokračovat u břehu s rodinou.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section alt">
+      <section class="section alt" aria-labelledby="sec-parents">
         <div class="container">
-          <h2>Free vs Premium</h2>
+          <div class="section-head">
+            <h2 id="sec-parents">Pro rodiče a opatrovníky</h2>
+            <p class="sub">Důvěra je základ — tady je, na čem stavíme.</p>
+          </div>
           <div class="grid">
             <article class="card">
+              <div class="card-icon teal" aria-hidden="true">🎯</div>
+              <h3>Přehledný plán</h3>
+              <p>Dítě má konkrétní témata (pravidla, druhy, hájení…), ne nekonečný scroll „něčeho“.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon water" aria-hidden="true">🛡️</div>
+              <h3>Bez sociální sítě</h3>
+              <p>Žádný veřejný profil, žádné psaní s cizími. Obsah míří na průkaz a zodpovědný pohyb u vody.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon sun" aria-hidden="true">📋</div>
+              <h3>Transparentní údaje</h3>
+              <p>Čekací listina má jasně popsané účely zpracování. Dokumenty najdete dole na stránce — GDPR a cookies.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sec-plans">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="sec-plans">Free a Premium</h2>
+            <p class="sub">Začít zdarma může každý; Premium rozšíří hloubku, až bude aplikace dostupná.</p>
+          </div>
+          <div class="premium-row">
+            <article class="premium-card free">
               <h3>Free</h3>
-              <p>Start zdarma: zaklad atlasu, testy a prvni uzly.</p>
+              <ul>
+                <li>Základ atlasu ryb a kvízy</li>
+                <li>Úvodní úvazy a bezpečnost u vody</li>
+                <li>Omezenější deník úlovků (kvůli nákladům na úložiště)</li>
+              </ul>
             </article>
-            <article class="card">
+            <article class="premium-card plus">
               <h3>Premium</h3>
-              <p>Simulace zkousky, vysvetleni chyb, pokrocile uzly, bez reklam.</p>
+              <ul>
+                <li>Bohatší karty druhů a rozšířené sekce</li>
+                <li>Více úvazů a návodů</li>
+                <li>Neomezenější deník a pokročilé funkce podle verze aplikace</li>
+              </ul>
+              <p class="hint" style="margin-top: 12px">Přesné znění se může do vydání upřesnit — vývoj stále běží.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section alt" aria-labelledby="sec-faq">
         <div class="container">
-          <h2>Pro rodice: proc aplikaci zkusit</h2>
-          <div class="grid">
+          <div class="section-head">
+            <h2 id="sec-faq">Časté dotazy</h2>
+          </div>
+          <div class="grid faq-grid">
             <article class="card">
-              <h3>Jasny plan pripravy</h3>
-              <p>Dite ma kazdy den konkretni ukol a vidi pokrok.</p>
+              <h3>Je aplikace jen pro děti?</h3>
+              <p>Primárně pro věk 8–15 let. Mladší děti by měly aplikaci používat s dospělým u zařízení.</p>
             </article>
             <article class="card">
-              <h3>Vyuka i praxe</h3>
-              <p>Nejen testy, ale i realne navyky u vody a setrne chovani k prirode.</p>
+              <h3>Nahradí to kroužek nebo kouče?</h3>
+              <p>Ne. Je to pomůcka k učení a opakování. Praktický výcvik a pravidla revíru vždy řeší dospělý a organizace.</p>
             </article>
             <article class="card">
-              <h3>Bezpecny obsah</h3>
-              <p>Obsah je zamereny na vyuku, bez socialni site a cizich chatu.</p>
+              <h3>Kdy dostanu přístup?</h3>
+              <p>Lidé z čekací listiny budou informováni před veřejným spuštěním. Pořadí záleží na kapacitě testování.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section alt">
-        <div class="container">
-          <h2>FAQ</h2>
-          <div class="grid">
-            <article class="card">
-              <h3>Pro jaky vek je appka?</h3>
-              <p>Primarne pro deti 8-15 let.</p>
-            </article>
-            <article class="card">
-              <h3>Staci Free verze?</h3>
-              <p>Ano, na start ano. Premium je pro rychlejsi a hlubsi pripravu.</p>
-            </article>
-            <article class="card">
-              <h3>Kdy bude spusteni?</h3>
-              <p>Drive dostanou pristup uzivatele z cekaci listiny.</p>
-            </article>
+      <section id="waitlist" class="section" aria-labelledby="sec-waitlist">
+        <div class="container waitlist-wrap">
+          <div class="section-head">
+            <h2 id="sec-waitlist">Čekací listina</h2>
+            <p class="sub">
+              Nech nám e-mail — napíšeme, až bude možné aplikaci stáhnout, a dáme vědět o startovní výhodě na Premium.
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section id="waitlist" class="section">
-        <div class="container">
-          <h2>Zapis se na cekaci listinu</h2>
-          <p class="lead">Ziskej prednostni pristup a vyhodnejsi cenu pri spusteni.</p>
-          <form id="waitlistForm" class="waitlist-form">
+          <form id="waitlistForm" class="waitlist-form" novalidate>
             <label>
               E-mail
-              <input type="email" name="email" required />
+              <input type="email" name="email" required autocomplete="email" inputmode="email" />
             </label>
             <label>
-              Jsi
+              Kdo se přihlašuje
               <select name="role" required>
-                <option value="">Vyber</option>
-                <option value="parent">Rodic</option>
-                <option value="child">Dite</option>
+                <option value="">Vyberte</option>
+                <option value="parent">Rodič nebo opatrovník</option>
+                <option value="child">Dítě (s vědomím rodiče)</option>
               </select>
             </label>
             <label>
-              Vek ditete
-              <input type="number" name="childAge" min="8" max="15" />
+              Věk dítěte (volitelné, 8–15)
+              <input type="number" name="childAge" min="8" max="15" inputmode="numeric" placeholder="např. 11" />
+              <span class="hint">Pomůže nám ladit obsah; neposílej údaje bez souhlasu rodiče.</span>
             </label>
-            <button class="btn" type="submit">Chci early access</button>
-            <p id="formMessage" class="form-message"></p>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="consentPrivacy" name="consentPrivacy" value="1" required />
+              <label for="consentPrivacy">
+                Potvrzuji, že jsem se seznámil/a se
+                <a href="./privacy.html" target="_blank" rel="noopener">Zásadami ochrany osobních údajů</a>
+                a souhlasím se zpracováním údajů pro správu čekací listiny a informování o spuštění produktu (e-mail,
+                role, případně věk dítěte).
+              </label>
+            </div>
+
+            <button class="btn" type="submit">Odeslat přihlášku</button>
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <p>Maly rybar</p>
-        <p>
-          <a href="./privacy-policy.md">Ochrana soukromi</a> |
-          <a href="./terms.md">Podminky</a>
-        </p>
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">Malý rybář</p>
+          <p class="footer-meta">
+            Provozuje Ing. Radek Aigel, IČ 74258575, sídlem Janského 554/3, 779 00 Olomouc.
+            <br />
+            Kontakt: <a href="mailto:aigelradek@gmail.com">aigelradek@gmail.com</a>
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Právní dokumenty">
+          <a href="./privacy.html">Ochrana osobních údajů (GDPR)</a>
+          <a href="./cookies.html">Cookies</a>
+          <a href="./terms.html">Obchodní podmínky</a>
+        </nav>
       </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc">
+      <div class="cookie-inner">
+        <p id="cookieDesc" class="cookie-text">
+          <strong id="cookieTitle">Cookies a měření</strong><br />
+          Používáme technicky nutné uložení vaší volby. Volitelně můžeme načíst písmo z Google Fonts a později měřit návštěvnost
+          (např. Google Analytics) — jen pokud dáte souhlas. Podrobnosti v
+          <a href="./cookies.html">Zásadách cookies</a>.
+        </p>
+        <div class="cookie-actions">
+          <button type="button" class="btn btn-cookie-decline" id="cookieNecessary">Jen nezbytné</button>
+          <button type="button" class="btn" id="cookieAll">Přijmout vše</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
   </body>
 </html>

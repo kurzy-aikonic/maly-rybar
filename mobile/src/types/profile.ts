@@ -1,3 +1,5 @@
+import type { FishAvatarId } from "../constants/fishAvatars";
+
 export type ExamHorizonId =
   | "do_3_mesicu"
   | "do_roka"
@@ -7,4 +9,7 @@ export type ExamHorizonId =
 export type ChildProfile = {
   childAge: number;
   examHorizon: ExamHorizonId;
+  /** Přezdívka (prázdná = zobrazí se „Malý rybář“). */
+  nickname?: string;
+  fishAvatarId?: FishAvatarId;
 };

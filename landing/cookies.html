@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Zásady cookies — Malý rybář, webová prezentace." />
+    <title>Zásady používání cookies | Malý rybář</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#obsah">Na obsah</a>
+    <div class="container legal-nav">
+      <a href="./index.html">← Zpět na úvod</a>
+    </div>
+    <article id="obsah" class="legal-doc">
+      <h1>Zásady používání cookies a podobných technologií</h1>
+      <p class="legal-updated">Platné od 2. 4. 2026 · Doplňte po právní kontrole před ostrým provozem.</p>
+
+      <h2>1. Co jsou cookies</h2>
+      <p>
+        Cookies jsou malé soubory nebo záznamy v úložišti prohlížeče, které umožní webu zapamatovat si například vaše nastavení.
+        Kromě cookies můžeme používat obdobné technologie (např. <strong>localStorage</strong> v prohlížeči).
+      </p>
+
+      <h2>2. Jaké technologie používáme na tomto webu</h2>
+
+      <h3>2.1 Nezbytné (technicky nutné)</h3>
+      <p>
+        <strong>Uložení vaší volby v liště cookies.</strong> Po kliknutí na „Jen nezbytné“ nebo „Přijmout vše“ uložíme záznam
+        do <code>localStorage</code> pod klíčem <code>maly_rybar_cookie_v1</code>. Bez toho bychom vás museli ptát při každé návštěvě znovu.
+        Právní základ: <strong>oprávněný zájem</strong> správce na funkčním výběru soukromí (ePrivacy + GDPR) / nezbytnost pro službu.
+      </p>
+
+      <h3>2.2 Volitelné — pouze po souhlasu „Přijmout vše“</h3>
+      <ul>
+        <li>
+          <strong>Google Fonts</strong> — načtení stylů písma z domény Google. Může jít o přístup IP adresy u poskytovatele Google.
+          Načítáme až po vašem souhlasu v cookie liště.
+        </li>
+        <li>
+          <strong>Analytika</strong> (např. Google Analytics, Plausible) — <strong>zatím nemusí být nasazeno</strong>. Pokud bude, bude se spouštět
+          až po souhlasu a bude zde doplněn přesný název nástroje, účel a délka uchování.
+        </li>
+      </ul>
+
+      <h2>3. Správce</h2>
+      <p>
+        Ing. Radek Aigel, IČ 74258575, Janského 554/3, 779 00 Olomouc.
+        Kontakt: <a href="mailto:aigelradek@gmail.com">aigelradek@gmail.com</a>.
+      </p>
+
+      <h2>4. Jak změnit nebo odvolat souhlas</h2>
+      <p>
+        V prohlížeči můžete smazat data stránek (localStorage) pro naši doménu — při příští návštěvě se znovu zobrazí lišta.
+        Konkrétní postup: nastavení prohlížeče → ochrana soukromí → cookies a data stránek → vyhledejte naši doménu → odstranit.
+      </p>
+      <p>Odvolání souhlasu nemá vliv na zákonnost zpracování před odvoláním.</p>
+
+      <h2>5. Odkazy</h2>
+      <p>
+        <a href="./privacy.html">Zásady ochrany osobních údajů</a> ·
+        <a href="./terms.html">Obchodní podmínky</a> ·
+        <a href="./index.html">Úvodní stránka</a>
+      </p>
+    </article>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-meta"><a href="./index.html">Úvod</a></p>
+      </div>
+    </footer>
+
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc">
+      <div class="cookie-inner">
+        <p id="cookieDesc" class="cookie-text">
+          <strong id="cookieTitle">Cookies a měření</strong><br />
+          Technicky nutné uložení volby; volitelně písma Google a analytika jen po souhlasu.
+          <a href="./cookies.html">Více</a>
+        </p>
+        <div class="cookie-actions">
+          <button type="button" class="btn btn-cookie-decline" id="cookieNecessary">Jen nezbytné</button>
+          <button type="button" class="btn" id="cookieAll">Přijmout vše</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

@@ -1,27 +1,11 @@
-# Ochrana soukromi (navrh)
+# Ochrana osobních údajů
 
-Tento dokument je navrh a pred spustenim je nutne pravni overeni.
+**Plné znění pro návštěvníky webu je v prohlížeči na stránce:**
 
-## Jake udaje sbirame
+**[privacy.html](./privacy.html)** — na ostrém webu např. `/landing/privacy.html`
 
-- e-mail
-- role (rodic/dite)
-- vek ditete (volitelne)
-- technicke udaje o navsteve webu (analytika)
+Tento soubor `.md` slouží jako odkaz z repozitáře; právní text účinný pro uživatele je v HTML kvůli čitelnosti a jednotnému stylu s landinkem.
 
-## Proc udaje sbirame
+---
 
-- zaslani informace o spusteni aplikace,
-- zlepsovani produktu a vyhodnoceni zajmu.
-
-## Jak dlouho udaje uchovavame
-
-- po dobu nezbytnou pro vyse uvedene ucely,
-- nebo do odvolani souhlasu.
-
-## Kontakt
-
-Pred ostrym spustenim doplnit:
-- spravce udaju,
-- e-mail pro GDPR dotazy,
-- postup pro vymaz dat.
+_Před ostrým sběrem dat doporučujeme právní kontrolu znění v `privacy.html`._

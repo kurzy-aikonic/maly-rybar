@@ -5,4 +5,6 @@ export type CatchEntry = {
   lengthCm?: number;
   water?: string;
   notes?: string;
+  /** Relativni cesta v bucketu catch-photos (jen pri sync do Supabase). */
+  photoStoragePath?: string;
 };

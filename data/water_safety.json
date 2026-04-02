@@ -1,0 +1,41 @@
+{
+  "title": "Než vyrazíš k vodě",
+  "intro": "Krátká pravidla pro děti. U vody tě má hlídat dospělý a znát místní pravidla lovu.",
+  "tips": [
+    "Nikdy nechoď k vodě sám — vždy s dospělým.",
+    "Neskákej do neznámé vody: může být mělká nebo studená.",
+    "Na kluzkých kamenech a u břehu choď opatrně.",
+    "Když máš záchrannou vestu (např. u lodi), zapni ji podle návodu dospělého.",
+    "Na cizí pruty, háčky a náčiní nesahej bez dovolení.",
+    "Rybu, kterou pouštíš, drž co nejkrátce nad vodou a pusť ji šetrně."
+  ],
+  "parent_note": "Povolenka, pravidla konkrétního revíru a počasí vždy řeší dospělý. Oficiální přehledy a revíry jsou u Českého rybářského svazu.",
+  "official_url": "https://www.rybsvaz.cz/",
+  "official_label": "Český rybářský svaz (oficiální zdroj)",
+  "checklist": [
+    {
+      "id": "adult_ok",
+      "label": "Jdu k vodě s dospělým, který mě hlídá."
+    },
+    {
+      "id": "rules_ok",
+      "label": "Dospělý ví, kde smíme lovit a jaká platí pravidla (povolenka, revír)."
+    },
+    {
+      "id": "weather_ok",
+      "label": "Víme, jaké bude počasí a máme vhodné oblečení."
+    },
+    {
+      "id": "drink_ok",
+      "label": "Máme pití a svačinu; slunce = čepice nebo krém dle domluvy."
+    },
+    {
+      "id": "phone_ok",
+      "label": "Dospělý má u sebe telefon pro případ nouze."
+    },
+    {
+      "id": "trash_ok",
+      "label": "Odpadky bereme domů — přírodu u vody nezanecháme špinavou."
+    }
+  ]
+}
